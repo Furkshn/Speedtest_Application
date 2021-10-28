@@ -3,7 +3,7 @@ import time
 import datetime
 
 
-start_process_time = time.time()                      # ---------------------- Time of Transactions
+
 moment = datetime.datetime.now()
 date = datetime.datetime.strftime(moment, '%c')       # ---------------------- Showing Date
 
@@ -11,6 +11,7 @@ date = datetime.datetime.strftime(moment, '%c')       # ---------------------- S
 
 def speedtest_():
 
+    start_process_time = time.time()    # ---------------------- Time of Transactions
     st = speedtest.Speedtest()
 
     for i in range(3):
